@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Détail de l’offre</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .not-found {
+      color: red;
+      font-size: 1.2rem;
+    }
+    .apply-form {
+      margin-top: 30px;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+    input, textarea, select {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="offer-container">
+    <!-- L'offre sera injectée ici -->
+  </div>
+
+  <script>
+    const offres = {
+      "5389861004": {
+        titre: "Business Development Lead",
+        description: `
+          <p><strong>Expérience :</strong> Minimum 5 ans en développement commercial ou partenariats stratégiques</p>
+          <p><strong>Profil :</strong> Entrepreneur dans l’âme, excellent négociateur, esprit stratégique</p>
+          <p><strong>Compétences :</strong> Négociation, stratégie commerciale, croissance partenariale</p>
+        `
+      },
+      "5452775004": {
+        titre: "Country Growth Operations Lead",
+        description: `
+          <p><strong>Expérience :</strong> 5 à 8 ans en gestion de projets ou opérations terrain</p>
+          <p><strong>Profil :</strong> Gestionnaire rigoureux, proactif et data-driven</p>
+          <p><strong>Compétences :</strong> Suivi de KPIs, coordination d’équipe, optimisation opérationnelle</p>
+        `
+      },
+      "5534997004": {
+        titre: "Country Launcher",
+        description: `
+          <p><strong>Expérience :</strong> 4+ ans en lancement de projets/produits dans un nouveau marché</p>
+          <p><strong>Profil :</strong> Autonome, créatif, structuré, excellent communicant</p>
+          <p><strong>Compétences :</strong> Analyse terrain, leadership, lancement go-to-market</p>
+        `
+      },
+      "5493880004": {
+        titre: "Growth Marketing Manager",
+        description: `
+          <p><strong>Expérience :</strong> 4+ ans en marketing digital orienté acquisition</p>
+          <p><strong>Profil :</strong> Créatif, analytique, orienté performance</p>
+          <p><strong>Compétences :</strong> SEO, SEA, A/B testing, social ads, CRM</p>
+        `
+      },
+      "5450148004": {
+        titre: "Senior Growth Analyst",
+        description: `
+          <p><strong>Expérience :</strong> 3 à 5 ans en data/business analysis</p>
+          <p><strong>Profil :</strong> Rigoureux, autonome, orienté business</p>
+          <p><strong>Compétences :</strong> SQL, Excel, Google Analytics, dashboards</p>
+        `
+      }
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    const container = document.getElementById("offer-container");
+
+    if (id && offres[id]) {
+      container.innerHTML = `
+        <h1>Offre #${id} — ${offres[id].titre}</h1>
+        ${offres[id].description}
+        <div class="apply-form">
+          <h2>Postuler maintenant</h2>
+          <form action="#" method="post">
+            <label>Nom / Name</label>
+            <input type="text" name="name" placeholder="Votre nom / Your name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Votre email" required>
+
+            <label>Lettre de motivation / Cover Letter</label>
+            <textarea name="message" rows="5" placeholder="Exprimez votre motivation ici..." required></textarea>
+
+            <label>CV (PDF)</label>
+            <input type="file" name="cv" accept=".pdf" required>
+
+            <label>Langue / Language</label>
+            <select name="language">
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+            </select>
+
+            <button type="submit">Envoyer ma candidature / Submit</button>
+          </form>
+        </div>
+      `;
+    } else {
+      container.innerHTML = `<p class="not-found">Aucune offre trouvée pour cet identifiant.</p>`;
+    }
+  </script>
+</body>
+</html>

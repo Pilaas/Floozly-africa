@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOOZLY - Mobile Money</title>
+    <!-- Link CSS Framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <link rel="icon" type="image/png" href="assets/favicon.jpg">
+    <script async defer data-domain="floozly.com" src="https://plausible.io/js/plausible.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+    
+<body>
+    <!-- Header -->
+<header class="bg-light p-3">
+        <div class="notice-banner">
+        <p>Vous voulez rejoindre Floozly? <a class="ext" href="careers.html">Consultez nos postes ouverts ici</a></p>
+    </div>
+      <div class="container text-center">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Logo FLOOZLY"> FLOOZLY</a>
+        <div class="navbar-nav">
+             <a class="nav-link" href="index.html">ACCUEIL  </a>
+            <a class="nav-link" href="Services.html">SERVICES</a>
+            <a class="nav-link" href="business.html">BUSINESS</a>
+             <a class="nav-link" href="about.html">NOS VALEURS</a>
+            <a class="nav-link" href="careers.html">CARRIÈRES</a>
+            <a class="nav-link" href="blog.html">BLOG</a>
+            <a class="nav-link" href="contact.html">CONTACT</a>
+        </div>
+    </nav>
+</div>
+ </header>
+
+    <section class="careers-section">
+        <div class="container">
+            <h2>Travailler chez Floozly</h2>
+            <div class="careers-grid">
+                <div class="careers-item">
+                    
+                    <h3>Nous travaillons à distance, vous pouvez donc contribuer à une mission qui change des vies, 
+                        d’où que vous soyez dans le monde.</h3>
+                    <img src="images/travail.jpg" alt="travail_center">
+                </div>
+               
+               
+            </div>
+        </div>
+    </section>
+<section class="floozlyrow" id="openRolesRow">
+    <h2 id="roles">Nos offres d’emploi</h2>
+    
+    
+    <form>
+    <div class="form-row">
+        
+        
+        <div class="col-sm-4"><select class="form-control custom-select" id="department-select" aria-label="Department" onchange="onSelect(event.target)" data-field="department">
+            <option value="*" selected>All departments</option>
+            
+            <option value="agent-operations">Agent Operations</option>
+            
+            <option value="business-development">Business Development</option>
+            
+            <option value="compliance">Compliance</option>
+            
+            <option value="engineering">Engineering</option>
+            
+            <option value="finance">Finance</option>
+            
+            <option value="growth-distribution-and-sales">Growth Distribution and Sales</option>
+            
+            <option value="marketing">Marketing</option>
+            
+            <option value="payments">Payments</option>
+            
+            <option value="people-operations">People Operations</option>
+            
+            <option value="product">Product</option>
+            
+            <option value="support">Support</option>
+            
+        </select></div>
+        
+        <div class="col-sm-4"><select class="form-control custom-select" id="office-select" aria-label="Office" onchange="onSelect(event.target)" data-field="office">
+            <option value="*" selected>All offices</option>
+            
+            <option value="Gabon">Gabon</option>
+            
+            <option value="Congo-Brazzaville">Congo-Brazzaville </option>
+            
+            <option value="Congo-Kinshasa">Congo-Kinshasa </option>
+            
+            <option value="Cameroun">Cameroun </option>
+            
+            <option value="Tchad">Tchad</option>
+            
+            <option value="launch">Launch</option>
+            
+            <option value="Guinée Équatoriale ">Guinée-Équatoriale</option>
+            
+            <option value="remote">Remote</option>
+            
+            
+        </select></div>
+        <script type="text/javascript">
+        
+        function onSelect() {
+    var selector = ".opening";
+    var fields = ["office", "department"];
+    var filters = [];
+
+    fields.forEach(function (field) {
+        var el = document.getElementById(field + "-select");
+        var value = el.value;
+        if (value !== "*") {
+            filters.push('[data-' + field + '="' + value + '"]');
+        }
+    });
+
+    if (filters.length > 0) {
+        selector += filters.join("");
+    }
+
+    document.querySelectorAll(".opening-section, .opening").forEach(function (el) {
+        el.style.display = "none";
+    });
+
+    document.querySelectorAll(selector).forEach(function (el) {
+        el.style.display = "block";
+        if (el.classList.contains("opening")) {
+            el.closest(".opening-section").style.display = "block";
+        }
+    });
+}
+        </script>
+    </div>
+    
+      <div class="opening-section">
+        <h3>Agent Operations</h3>
+        
+        <div class="opening"
+            data-department="agent-operations"
+            data-office="Gabon"
+        >
+            <a href="job.html">Directeur de communication </a>
+            <span class="location">Libreville, Gabon</span>
+        </div>
+      
+        <div class="opening"
+            data-department="chef-agence"
+            data-office="Gabon"
+        >
+            <a href="job.html">Chef d'agence</a>
+            <span class="location">Libreville/Port-Gentil</span>
+        </div>
+      
+        
+      
+    </div>
+    
+      <div class="opening-section">
+        <h3>Business Development</h3>
+        
+        <div class="opening"
+            data-department="business-development"
+            data-office="Gabon"
+        >
+            <a href="job.html">Business Development Lead</a>
+            <span class="location">Libreville</span>
+        </div>
+      
+    </div>
+    
+      <!-- <div class="opening-section">
+        <h3>Compliance</h3>
+        
+        <div class="opening"
+            data-department="compliance"
+            data-office="burkina-faso-bf"
+        >
+            <a href="https://www.wave.com/en/careers/job/5460579004/">Compliance Officer</a>
+            <span class="location">Ouagadougou, Kadiogo, Burkina Faso</span>
+        </div>
+      
+        <div class="opening"
+            data-department="compliance"
+            data-office="uganda-ug"
+        >
+            <a href="https://www.wave.com/en/careers/job/5504532004/">Fraud  Analyst</a>
+            <span class="location">Kampala, Kampala, Uganda</span>
+        </div>
+      
+    </div> -->
+    
+     <!--  <div class="opening-section">
+        <h3>Engineering</h3>
+        
+        <div class="opening"
+            data-department="engineering"
+            data-office="remote"
+        >
+            <a href="https://www.wave.com/en/careers/job/5291100004/">Database Platform Engineer</a>
+            <span class="location">Canada; Spain; United Kingdom; United States</span>
+        </div>
+      
+        <div class="opening"
+            data-department="engineering"
+            data-office="remote"
+        >
+            <a href="https://www.wave.com/en/careers/job/5389143004/">Engineering Manager (Prod Finance &amp; Compliance Team)</a>
+            <span class="location">Ghana; Kenya; Spain; United Kingdom</span>
+        </div>
+      
+        <div class="opening"
+            data-department="engineering"
+            data-office="remote"
+        >
+            <a href="https://www.wave.com/en/careers/job/5254152004/">Site Reliability Engineer</a>
+            <span class="location">Canada</span>
+        </div>
+      
+    </div> -->
+    
+     <!--  <div class="opening-section">
+        <h3>Finance</h3>
+        
+        <div class="opening"
+            data-department="finance"
+            data-office="gambia-gm"
+        >
+            <a href="https://www.wave.com/en/careers/job/5489099004/">AP Accountant</a>
+            <span class="location">Banjul, Banjul, The Gambia</span>
+        </div>
+      
+        <div class="opening"
+            data-department="finance"
+            data-office="senegal-sn"
+        >
+            <a href="https://www.wave.com/en/careers/job/5526641004/">Senior Buyer</a>
+            <span class="location">Dakar, Dakar, Senegal</span>
+        </div>
+      
+    </div> -->
+    
+      <div class="opening-section">
+        <h3>Growth Distribution and Sales</h3>
+        
+        <div class="opening"
+            data-department="growth-distribution-and-sales"
+            data-office="launch"
+        >
+            <a href="job.html">Country Growth Operations Lead</a>
+            <span class="location">Libreville, Libreville, Gabon; Cameroon (CM); Brazzaville , Brazzaville , Congo-Brazzaville ; Kinshasa , Kinshasa , Congo-Kinshasa </span>
+        </div>
+      
+        <div class="opening"
+            data-department="growth-distribution-and-sales"
+            data-office="remote"
+        >
+            <a href="job.html">Country Launcher</a>
+            <span class="location">Libreville, Libreville , Gabon; Kinshasa , Kinshasa , Congo-Kinshasa ; N'Djamena , N'Djamena , Tchad; Cameroon (CM); Malabo, Malabo, Guinée-Équatoriale ; Remote</span>
+        </div>
+      
+      
+    </div>
+    
+      <div class="opening-section">
+        <h3>Marketing</h3>
+        
+        <div class="opening"
+            data-department="marketing"
+            data-office="gabon"
+        >
+            <a href="job.html">Growth Marketing Manager</a>
+            <span class="location">Libreville, Libreville, Gabon</span>
+        </div>
+      
+    </div>
+    
+    <!--   <div class="opening-section">
+        <h3>Payments</h3>
+        
+        <div class="opening"
+            data-department="payments"
+            data-office="cote-divoire-ci"
+        >
+            <a href="https://www.wave.com/en/careers/job/5429775004/">Merchant Opening Regional Lead</a>
+            <span class="location">Abidjan, Abidjan, Côte d&#39;Ivoire</span>
+        </div>
+      
+        <div class="opening"
+            data-department="payments"
+            data-office="cote-divoire-ci"
+        >
+            <a href="https://www.wave.com/en/careers/job/5452817004/">Sales Representative</a>
+            <span class="location">Abidjan, Abidjan, Côte d&#39;Ivoire</span>
+        </div>
+      
+    </div> -->
+    
+    <!--   <div class="opening-section">
+        <h3>People Operations</h3>
+        
+        <div class="opening"
+            data-department="people-operations"
+            data-office="remote"
+        >
+            <a href="https://www.wave.com/en/careers/job/5460567004/">HR Systems Lead</a>
+            <span class="location">Canada; Ghana; Kenya; Spain; United Kingdom</span>
+        </div>
+      
+        <div class="opening"
+            data-department="people-operations"
+            data-office="remote"
+        >
+            <a href="https://www.wave.com/en/careers/job/5366764004/">IT Operations Director</a>
+            <span class="location">Ghana; Kenya; Spain; United Kingdom</span>
+        </div>
+      
+        <div class="opening"
+            data-department="people-operations"
+            data-office="senegal-sn"
+        >
+            <a href="https://www.wave.com/en/careers/job/5357641004/">Office Management Lead</a>
+            <span class="location">Dakar, Dakar, Senegal</span>
+        </div>
+      
+    </div> -->
+    
+      <div class="opening-section">
+        <h3>Product</h3>
+        
+        <div class="opening"
+            data-department="product"
+            data-office="remote"
+        >
+            <a href="job.html">Senior Growth Analyst</a>
+            
+            <span class="location">Gabon; Congo; Tchad; Cameroun; Guinée-Équatoriale </span>
+        </div>
+     </div>
+    </form>
+      
+</section>
+</body>
+</html>

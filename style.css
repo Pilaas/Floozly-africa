@@ -1,0 +1,1265 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Header */
+header {
+    background-color: #007bff; /* Couleur bleue pour le header */
+    color: black;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Section générale */
+section {
+    padding: 40px 20px;
+}
+
+section#home {
+    background-color: black;
+}
+
+section#services {
+    background-color: black;
+}
+
+section#about {
+    background-color: black;
+}
+
+section#assistance {
+    background-color: black;
+}
+
+/* Texte centré */
+.text-center {
+    text-align: center;
+}
+.section {
+    padding: 50px 0;
+    background-color: black;
+}
+.container-business {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0; /* Supprime l'espace par défaut sous le titre */
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px; /* Ajoute un espace contrôlé sous le titre */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Assure que tous les éléments ont la même hauteur */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*css section presentation page accueil*/
+.presentation-floozly, .entreprise, .vision-floozly {
+    flex: 1; /* Les éléments prennent une part égale de l'espace disponible */
+    min-height: 350px; /* Définit une hauteur minimale */
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.presentation-floozly img, .entreprise img, .vision-floozly img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+h2, h3 {
+    font-size: 1.8em;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    flex-grow: 1; /* Permet aux paragraphes de remplir l'espace disponible */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation-floozly, .entreprise, .vision-floozly {
+        width: 90%;
+        margin-bottom: 20px;
+        min-height: auto; /* Ajustement pour éviter les grands espaces sur mobile */
+    }
+}
+.mot-directeur {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mot-directeur img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px; /* Ajoute un espace sous l'image */
+}
+
+.signature {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.mot-directeur div {
+    flex: 1;
+    text-align: center;
+}
+
+.lien.linkedkin {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #0077b5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #0077b5;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .mot-directeur {
+        width: 90%;
+        text-align: center;
+    }
+
+    .mot-directeur img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Couleur sombre pour le footer */
+    color: #fff;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Liste dans le footer */
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Icônes des réseaux sociaux */
+footer div a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Formulaire */
+form label {
+    font-weight: bold;
+}
+
+form textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #28a745; /* Vert clair */
+    border-radius: 50%;
+}
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #28a745; /* Vert clair */
+    border-radius: 50%;
+}
+/* Logo dans le header */
+.logo-header {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Logo dans le footer */
+.logo-footer {
+    height: 60px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+/* Icônes des réseaux sociaux */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.notice-banner {
+    background-color: coral; /* Couleur de fond corail */
+    color: white; /* Texte en blanc pour un meilleur contraste */
+    padding: 5px; /* Espacement intérieur pour un look soigné */
+    text-align: center; /* Centrer le contenu */
+    border-radius: 5px; /* Légers coins arrondis */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.notice-banner p {
+    margin: 0; /* Supprime les marges par défaut du paragraphe */
+    font-size: 1.2rem; /* Taille de texte légèrement agrandie */
+}
+
+.notice-banner a {
+    color: white; /* Lien en blanc pour cohérence */
+    text-decoration: underline; /* Souligné pour attirer l'attention */
+    font-weight: bold; /* Mettre en valeur le lien */
+}
+
+.notice-banner a:hover {
+    color: #ffd700; /* Change en doré au survol */
+    text-decoration: none; /* Retire le soulignement au survol */
+}
+/* Global container styling */
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: 
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Sépare le logo et les liens */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white; /* Fond blanc pour la navigation */
+    border-bottom: 5px solid #34c759; /* Ligne verte en bas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Logo styling */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #34c759; /* Texte vert clair pour le nom */
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    height: 50px; /* Taille du logo */
+    margin-right: 10px; /* Espace entre le logo et le texte */
+}
+
+/* Navigation links styling */
+.navbar-nav {
+    display: flex;
+    gap: 20px; /* Espacement entre les liens */
+}
+
+.nav-link {
+    color: black; /* Couleur des liens */
+    text-decoration: none;
+    font-weight: bold; /* Met les liens en gras */
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Animation douce pour le survol */
+}
+
+.nav-link:hover {
+    color: #34c759; /* Change la couleur au survol en vert clair */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Affiche la navigation verticalement */
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Change la direction des liens */
+        gap: 10px;
+    }
+}
+/* Section Hero */
+.hero-section {
+    background-color: #87CEEB; /* Bleu ciel */
+    color: black;
+    padding: 50px 20px;
+    border-radius: 10px; /* Coins arrondis pour un design plus doux */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+}
+
+.hero-section p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont;
+    line-height: 1.6;
+}
+
+.download-buttons .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.download-buttons .btn-primary {
+    background-color: #004a8d; /* Bleu foncé pour Google Play */
+    color: white;
+    border: none;
+}
+
+.download-buttons .btn-primary:hover {
+    background-color: #003366; /* Couleur plus foncée au survol */
+}
+
+.download-buttons .btn-secondary {
+    background-color: #333333; /* Gris foncé pour App Store */
+    color: white;
+    border: none;
+}
+
+.download-buttons .btn-secondary:hover {
+    background-color: #555555; /* Couleur plus claire au survol */
+}
+
+.app-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Section Features */
+#features {
+    background-color: black; /* Couleur de fond gris clair */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#features h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#features .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrage horizontal des colonnes */
+    gap: 20px;
+}
+
+#features .col-md-4 {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    text-align: center;
+    flex: 0 0 30%; /* Taille flexible pour s'adapter à l'écran */
+}
+
+#features .col-md-4 h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* Bleu pour les titres */
+    margin-bottom: 15px;
+}
+
+#features .col-md-4 p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Icon Styling */
+#features .icon {
+    font-size: 3rem; /* Taille des icônes */
+    color: #34c759; /* Couleur verte pour les icônes */
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #features .row {
+        flex-direction: column; /* Colonnes empilées sur petits écrans */
+    }
+
+    #features .col-md-4 {
+        flex: 0 0 100%; /* Chaque colonne prend toute la largeur */
+    }
+}
+#features.container-business {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0; /* Supprime l'espace par défaut sous le titre */
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px; /* Ajoute un espace contrôlé sous le titre */
+}
+
+
+
+
+/*css page about*/
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Fond gris clair */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section Nos Valeurs */
+.values-section {
+    background-color: white; /* Fond blanc */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+.values-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50; /* Bleu foncé */
+    margin-bottom: 40px;
+}
+
+/* Grid Styles */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grille flexible */
+    gap: 20px;
+}
+
+/* Individual Value Item */
+.value-item {
+    background-color: #f8f9fa; /* Fond gris clair */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.value-number {
+    position:relative;
+    top: 10px;
+    left: 20px;
+    background-color: #007bff; /* Bleu vif */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Rond parfait */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+.value-item h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* Bleu vif pour les titres */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.value-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: 1fr; /* Une seule colonne sur écran mobile */
+    }
+
+    .value-item {
+        padding: 20px;
+    }
+}
+
+/* css page business section revolution */
+#careersPage {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #1f1f1f;
+  padding: 0;
+  margin: 0;
+}
+
+.floozlyrow {
+  width: 100%;
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+}
+
+.floozlycol {
+  max-width: 800px;
+  margin: 0 auto; /* centre horizontalement */
+  text-align: center;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.floozlycol h2 {
+  font-size: 2rem;
+  color: #008080;
+  margin-bottom: 1rem;
+}
+
+.floozlycol p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.floozbutton {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #008080;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.floozbutton:hover {
+  background-color: #006666;
+}
+/* Responsive Design */
+.businessrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5%;
+    left: 50px;
+    background-color: #f8f8f8;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.left p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.business-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0077b5;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.right {
+    width: 45%;
+    text-align: center;
+}
+
+.businessapp img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section des logos */
+.logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.logos li {
+    list-style: none;
+    width: 120px;
+}
+
+.logos img {
+    width: 100%;
+    max-height: 60px;
+    object-fit: contain;
+}
+
+/* Section des statistiques */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.stats li {
+    list-style: none;
+}
+
+.stats-header {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0077b5;
+}
+
+.stats p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* css section entreprise partenaire */
+@media (max-width: 768px) {
+    .businessrow {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .logos {
+        justify-content: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+* Style général */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: white;
+}
+
+/* Section business row */
+.businessrow {
+  background-color: #121212;
+  padding: 60px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Éléments décoratifs (vagues blanches en bas à droite) */
+.businessrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 30%;
+  background-image: url('images/wave-pattern.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* Structure split row */
+.splitrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.left {
+  width: 45%;
+}
+
+/* Titre avec icône */
+.icontitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.icontitle div:first-child {
+  margin-right: 15px;
+}
+
+.icontitle img {
+  width: 60px;
+  height: 60px;
+  background-color: #0a0;
+  border-radius: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Styles des textes */
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 0 0 30px 0;
+  font-weight: 600;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Image de l'application */
+.splitrow::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  height: 400px;
+  background-image: url('images/app-screenshot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* Media queries pour le responsive */
+@media (max-width: 1024px) {
+  .businessrow {
+    padding: 40px;
+  }
+  
+  .left {
+    width: 55%;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .splitrow {
+    flex-direction: column;
+  }
+  
+  .left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .splitrow::after {
+    position: relative;
+    width: 100%;
+    right: 0;
+    margin-top: 30px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+}
+
+  /* ... le code CSS blog ... */
+/* Style global */
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background-color: #f2f4f7;
+  color: #333;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.7;
+}
+
+/* Section article */
+article {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Titres */
+article h1 {
+  font-size: 1.8rem;
+  color: #1a73e8;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphes */
+article p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Citations */
+article blockquote {
+  font-style: italic;
+  background-color: #f0f4ff;
+  border-left: 4px solid #1a73e8;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  color: #333;
+  border-radius: 6px;
+}
+
+/* Listes */
+article ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+article ul li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+  color: #333;
+}
+
+
+/*css page careers*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h2, h3 {
+  color: #191c1f;
+  margin-bottom: 1rem;
+}
+
+.careers-section {
+  background-color: black;
+  padding: 4rem 2rem;
+  border-bottom: 2px solid #ececec;
+}
+
+.careers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.careers-item {
+  max-width: 600px;
+  text-align: center;
+}
+
+.careers-item h3 {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.careers-item img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.floozlyrow {
+  background-color: black;
+  padding: 4rem 2rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-control.custom-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.opening-section {
+  margin-bottom: 3rem;
+}
+
+.opening-section h3 {
+  color: #0b4f6c;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #0b4f6c;
+  padding-left: 0.75rem;
+}
+
+.opening {
+  margin-bottom: 1rem;
+}
+
+.opening a {
+  display: block;
+  font-weight: 600;
+  color: #003f5c;
+  text-decoration: none;
+  margin-bottom: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.opening a:hover {
+  color: #0082c8;
+}
+
+.location {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .careers-grid {
+    flex-direction: column;
+  }
+}
+
+/*css page job*/
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #00b894;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.search-box {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.job-card {
+  background: black;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.job-title {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #0052cc;
+}
+
+.job-link {
+  text-decoration: none;
+  color: #00b894;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  margin: 60px 0 30px;
+  color: #777;
+}
+.job-category {
+  margin-bottom: 30px;
+}
+
+.job-link {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.job-link:hover {
+  color: #007bff;
+}
+
+.apply-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
+
+.apply-form {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.close-btn {
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.language-toggle button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.language-toggle button:hover {
+  background-color: #f1f1f1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: blanchedalmond;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
